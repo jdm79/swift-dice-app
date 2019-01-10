@@ -18,11 +18,21 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImageView2: UIImageView!
     
     override func viewDidLoad() {
+        // this is a bit like componentDidMount in React
+        // only gets triggered when the view loads up
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        updateDiceImages()
     }
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
+        
+        updateDiceImages()
+
+    }
+    
+    // this is exported and used in viewDidLoad()
+    func updateDiceImages() {
         
         // change range to 1 ... 6 if using the dynamic image path below
         randomDiceIndex1 = Int.random(in: 0 ... 5)
@@ -31,9 +41,8 @@ class ViewController: UIViewController {
         diceImageView1.image = UIImage(named: diceArray[randomDiceIndex1])
         diceImageView2.image = UIImage(named: diceArray[randomDiceIndex2])
         
-//        diceImageView1.image = UIImage(named: "dice\(randomDiceIndex1)")
-//        diceImageView2.image = UIImage(named: "dice\(randomDiceIndex2)")
-
+        //diceImageView1.image = UIImage(named: "dice\(randomDiceIndex1)")
+        //diceImageView2.image = UIImage(named: "dice\(randomDiceIndex2)")
     }
     
 }
