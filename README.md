@@ -10,7 +10,7 @@ Function rollButtonPressed is executed when the 'roll' button is pressed, trigge
 
 ### Sample Code
 
-```
+``` swift
 @IBAction func rollButtonPressed(_ sender: UIButton) {
         
         randomDiceIndex1 = Int.random(in: 1 ... 6)
