@@ -1,6 +1,6 @@
 ### Dice App
 
-A simple dice app made with Swift. Click 'roll' and the di will produce two numbers.
+A simple dice app made with Swift. Click 'roll' (or shake the phone) and the di will produce two numbers.
 
 
 ### How it works
