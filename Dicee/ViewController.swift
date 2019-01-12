@@ -20,9 +20,9 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var diceImageView1: UIImageView!
     @IBOutlet weak var diceImageView2: UIImageView!
-    @IBOutlet weak var totalAmountView: UITextField!
-    @IBOutlet weak var previousAmountView: UITextField!
-    @IBOutlet weak var totalRollsView: UITextField!
+    @IBOutlet weak var totalRollAmountView: UILabel!
+    @IBOutlet weak var totalRollsView: UILabel!
+    @IBOutlet weak var previousAmountView: UILabel!
     
     override func viewDidLoad() {
         // this is a bit like componentDidMount in React
@@ -30,6 +30,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 //        updateDiceImages()
+        diceImageView1.image = UIImage(named: "dice\(7)")
+        diceImageView2.image = UIImage(named: "dice\(7)")
     }
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
@@ -62,7 +64,7 @@ class ViewController: UIViewController {
         
         diceImageView1.image = UIImage(named: diceArray[randomDiceIndex1])
         diceImageView2.image = UIImage(named: diceArray[randomDiceIndex2])
-        totalAmountView.text = String(total)
+        totalRollAmountView.text = String(total)
         previousRoll.append(runningTotal);
         totalRollsView.text = String(i + 1)
         previousAmountView.text = String(runningTotal)
@@ -78,7 +80,7 @@ class ViewController: UIViewController {
         
         previousRoll = [0];
         i = 0;
-        totalAmountView.text = String(0)
+        totalRollAmountView.text = String(0)
         previousAmountView.text = String(0)
         totalRollsView.text = String(0)
 
