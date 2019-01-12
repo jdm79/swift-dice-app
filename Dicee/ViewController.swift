@@ -76,6 +76,9 @@ class ViewController: UIViewController {
         i = 0;
         totalAmountView.text = String(0)
         previousAmountView.text = String(0)
+        // this makes no image appear for the di as dice6 is the last one
+        diceImageView1.image = UIImage(named: "dice\(7)")
+        diceImageView2.image = UIImage(named: "dice\(7)")
         
     }
     
