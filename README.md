@@ -2,6 +2,8 @@
 
 A simple dice app made with Swift. Click 'roll' (or shake the phone) and the di will produce two numbers. The total of these two di will also displayed after each roll.
 
+[How it looks](https://github.com/jdm79/swift-dice-app/blob/master/Dicee/dicee-screenshot-1.PNG)
+
 
 ### How it works
 
