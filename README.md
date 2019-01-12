@@ -4,6 +4,7 @@ A simple dice app made with Swift. Click 'roll' (or shake the phone) and the di 
 
 [How it looks](https://github.com/jdm79/swift-dice-app/blob/master/Dicee/dicee-screenshot-1.PNG)
 
+[How it looks 2](https://github.com/jdm79/swift-dice-app/blob/master/Dicee/dicee-screenshot-2.PNG)
 
 ### How it works
 
