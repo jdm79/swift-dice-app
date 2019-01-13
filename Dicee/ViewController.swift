@@ -28,10 +28,9 @@ class ViewController: UIViewController {
         // this is a bit like componentDidMount in React
         // only gets triggered when the view loads up
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//        updateDiceImages()
-        diceImageView1.image = UIImage(named: "dice\(7)")
-        diceImageView2.image = UIImage(named: "dice\(7)")
+        
+        defaultDiceImages()
+
     }
 
     @IBAction func rollButtonPressed(_ sender: UIButton) {
@@ -83,7 +82,11 @@ class ViewController: UIViewController {
         totalRollAmountView.text = String(0)
         previousAmountView.text = String(0)
         totalRollsView.text = String(0)
-
+        defaultDiceImages()
+        
+    }
+    
+    func defaultDiceImages() {
         diceImageView1.image = UIImage(named: "dice\(7)")
         diceImageView2.image = UIImage(named: "dice\(7)")
     }
